@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦄 Portfolio ของ ณัฐชา มรุตัณฑ์ 🦄</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&family=Prompt:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+            color: #4a5568;
+            scroll-behavior: smooth;
+        }
+        .header {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .nav-link:hover {
+            color: #6d28d9; /* Purple-800 */
+            transform: scale(1.1);
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 2rem;
+            padding: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        h1, h2 {
+            font-family: 'Charmonman', cursive;
+            text-shadow: 2px 2px #fff;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #d8b4fe; /* Purple-300 */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .game-img {
+            height: 120px;
+            width: 120px;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 3px solid #818cf8; /* Indigo-400 */
+        }
+        .drawing-img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 1rem;
+            border: 3px solid #f9a8d4; /* Pink-300 */
+        }
+        .icon {
+            font-size: 2rem;
+            color: #d8b4fe;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Navbar -->
+    <header class="header fixed top-0 w-full z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="text-3xl font-bold text-indigo-500 font-chamonman">🦄</div>
+            <div class="space-x-8">
+                <a href="#home" class="nav-link text-gray-600 transition duration-300">หน้าแรก</a>
+                <a href="#about" class="nav-link text-gray-600 transition duration-300">เกี่ยวกับฉัน</a>
+                <a href="#hobby" class="nav-link text-gray-600 transition duration-300">งานอดิเรก</a>
+                <a href="#drawing" class="nav-link text-gray-600 transition duration-300">ผลงาน</a>
+                <a href="#contact" class="nav-link text-gray-600 transition duration-300">ติดต่อ</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <div class="card max-w-2xl mx-auto text-center animate-fade-in">
+                <img src="https://placehold.co/200x200/d8b4fe/6b46c1?text=N" alt="รูปโปรไฟล์" class="profile-img mx-auto mb-6">
+                <h1 class="text-6xl font-extrabold text-purple-600 mb-4">ณัฐชา มรุตัณฑ์</h1>
+                <p class="text-2xl text-pink-500 mb-8">ชื่อเล่น: น้ำผึ้ง</p>
+                <p class="text-lg">ยินดีต้อนรับสู่โลกของยูนิคอร์น! ฉันคือ น้ำผึ้ง ณัฐชา มรุตัณฑ์ ที่รักการวาดรูปและการเล่นเกม</p>
+                <div class="mt-8">
+                    <a href="#about" class="bg-indigo-400 text-white font-bold py-3 px-6 rounded-full hover:bg-indigo-500 transition duration-300 shadow-lg">เกี่ยวกับฉัน</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container mx-auto px-6 py-12">
+            <div class="card max-w-3xl mx-auto animate-slide-up">
+                <h2 class="text-4xl text-center font-bold text-pink-500 mb-8">เกี่ยวกับฉัน</h2>
+                <div class="text-center">
+                    <p class="text-lg mb-4">ปัจจุบันกำลังศึกษาอยู่ที่โรงเรียน **สุรธรรมพิทักษ์**</p>
+                    <p class="text-lg mb-4">ฉันมีความสนใจเป็นพิเศษในเรื่อง **การเขียนแบบ (Drafting)**</p>
+                    <p class="text-lg">การสร้างสรรค์สิ่งใหม่ๆ จากเส้นและรูปทรงคือสิ่งที่ทำให้ฉันมีความสุข</p>
+                    <img src="https://placehold.co/600x400/a6c1ee/3e63a1?text=My+School" alt="รูปโรงเรียนสุรธรรมพิทักษ์" class="rounded-2xl mt-8 shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobby Section -->
+    <section id="hobby" class="section">
+        <div class="container mx-auto px-6 py-12">
+            <div class="card max-w-3xl mx-auto animate-slide-up">
+                <h2 class="text-4xl text-center font-bold text-purple-500 mb-8">งานอดิเรก</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+                    <div>
+                        <img src="https://placehold.co/120x120/d8b4fe/6b46c1?text=🎮" alt="ไอคอนเกม" class="game-img mx-auto mb-4">
+                        <h3 class="text-2xl font-bold text-indigo-600 mb-2">เล่นเกม</h3>
+                        <p class="text-gray-600">เกมเป็นอีกโลกที่ทำให้ฉันได้ผ่อนคลายและสนุกไปกับเพื่อนๆ</p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/120x120/a6c1ee/3e63a1?text=🎨" alt="ไอคอนวาดรูป" class="game-img mx-auto mb-4">
+                        <h3 class="text-2xl font-bold text-indigo-600 mb-2">วาดรูป</h3>
+                        <p class="text-gray-600">ไม่ว่าจะวาดการ์ตูนหรือภาพวิว ก็เป็นงานอดิเรกที่ฉันรักมาก</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Drawing Section -->
+    <section id="drawing" class="section">
+        <div class="container mx-auto px-6 py-12">
+            <div class="card max-w-4xl mx-auto animate-slide-up">
+                <h2 class="text-4xl text-center font-bold text-pink-500 mb-8">แกลเลอรีรูปวาด</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    <!-- รูปภาพตัวอย่าง 1 -->
+                    <div class="relative group">
+                        <img src="https://placehold.co/400x400/fecaca/8b5cf6?text=Drawing+1" alt="รูปวาด 1" class="drawing-img w-full shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                            <p class="text-white text-lg font-bold">ผลงานศิลปะ</p>
+                        </div>
+                    </div>
+                    <!-- รูปภาพตัวอย่าง 2 -->
+                    <div class="relative group">
+                        <img src="https://placehold.co/400x400/e9d5ff/8b5cf6?text=Drawing+2" alt="รูปวาด 2" class="drawing-img w-full shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                            <p class="text-white text-lg font-bold">การ์ตูน</p>
+                        </div>
+                    </div>
+                    <!-- รูปภาพตัวอย่าง 3 -->
+                    <div class="relative group">
+                        <img src="https://placehold.co/400x400/c7d2fe/8b5cf6?text=Drawing+3" alt="รูปวาด 3" class="drawing-img w-full shadow-lg transition-transform duration-300 transform group-hover:scale-105">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center rounded-2xl">
+                            <p class="text-white text-lg font-bold">ภาพวิว</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <div class="card max-w-2xl mx-auto animate-slide-up">
+                <h2 class="text-4xl font-bold text-purple-500 mb-8">ติดต่อฉัน</h2>
+                <p class="text-lg mb-4">สามารถติดต่อได้ทางอีเมลหรือโซเชียลมีเดียต่างๆ</p>
+                <div class="flex justify-center space-x-6">
+                    <a href="#" class="text-pink-500 hover:text-pink-700 transition duration-300">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.003 5.884L10 9.882l-7.997 3.998v-7.996zm17.994 3.998L12 14.118l7.997-3.998V18.12l-7.997-3.998-7.998 3.998V6.118L12 10.118l7.997-3.998z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-indigo-500 hover:text-indigo-700 transition duration-300">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.25 15.25c-.25.25-.5.5-.75.75-.5.5-1.25.25-1.5-.25L10.5 12l-3 3.75c-.25.25-.5.25-.75 0-.25-.25-.25-.75 0-1L9.25 11l-3-3.75c-.25-.25-.25-.75 0-1 .25-.25.75-.25 1 0L12 11.25l3.25-3.25c.25-.25.75-.25 1 0 .25.25.25.75 0 1L12.75 12l3.25 3.25c.25.25.25.75 0 1z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-purple-500 hover:text-purple-700 transition duration-300">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/>
+                        </svg>
+                    </a>
+                </div>
+                <p class="text-sm text-gray-400 mt-6">© 2024 Natcha Marutan. All rights reserved.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
